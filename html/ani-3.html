@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            /* background-color: #33333388; */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: all 2s;
+            animation-name: kites;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; 
+            animation-direction: alternate;
+            animation-timing-function: 'ease-out';
+            animation-fill-mode: forwards;
+
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+  @keyframes kites {
+  0% {
+    left: 0%;
+    transform: rotate(0deg);
+  }
+
+  30% {
+    left: 10%;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    left: 60%;
+    transform: rotate(130deg);
+  }
+
+  60% {
+    left: 65%;
+    transform: rotate(150deg);
+  }
+
+  80% {
+    left: 70%;
+    transform: rotate3d(1, 1, 0, 180deg); /* Correct syntax */
+  }
+
+  100% {
+    left: 95%;
+    transform: translateX(-50%) rotate(200deg);
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>
